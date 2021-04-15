@@ -1,0 +1,32 @@
+baseURL: "http://127.0.0.1:1313"
+languageCode: "en-us"
+title: "My New Hugo Site"
+theme: hugo-PaperMod
+
+# 主导航菜单
+name: "首页"
+url: "/"
+weight: "1"
+menu:
+  main:
+  - name: "文章"
+    url: "/post"
+    weight: "2"
+  - name: "标签"
+    url: "/post"
+    weight: "2"
+  - name: "test"
+    url: "/post"
+    weight: "3"
+  - name: "关于"
+    url: "/about"
+    weight: "4"
+
+# # 页脚导航菜单
+#   foot:
+#   - name: "网站首页"
+#     url: "/"
+#     weight: "4"
+#   - name: "博文集合"
+#     url: "/post"
+#     weight: "4"
