@@ -18,16 +18,16 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           # hugo-version: '${{ steps.hugo-version.outputs.HUGO_VERSION }}'
-          hugo-version: '0.74.2'
+          hugo-version: '0.82.0'
           # extended: true
           
       - name: Build
-        run: hugo --minify
+        run: hugo
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.blog }}
-          external_repository: xxx/xxx.github.io
+          external_repository: landyli/landyli.github.io
           publish_branch: master
           publish_dir: ./public
